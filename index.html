@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layouts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        .column, .full {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .basic {
+            background-color: #bd8686;
+        }
+        .two-column .column {
+            background-color: #8fe2f5;
+            flex: 1;
+        }
+        .three-column .column {
+            background-color: #c7a2a2;
+            flex: 1;
+        }
+        .two-row .row {
+            background-color: #d4d776;
+            flex-direction: column;
+        }
+        .three-row .row {
+            flex-direction: column;
+        }
+        .four-row .row {
+            flex-direction: column;
+        }
+        .article-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .article-left, .article-right {
+            background-color: #8ee9a2;
+            padding: 10px;
+            box-sizing: border-box;
+            flex: 1;
+        }
+        .article-right {
+            order: 1;
+        }
+        .article-main {
+            background-color: #e8cca7;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .full {
+            background-color: #f0f0f0;
+        }
+        .three-column .column {
+            background-color: #aeb2ef;
+            flex: 1;
+        }
+        .medium-grid .item, .small-grid .item, .large-grid .item {
+            background-color: #82eea2;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .medium-grid .item {
+            flex: 1;
+            min-width: calc(33.33% - 20px);
+        }
+        .small-grid .item {
+          flex: 1;
+            min-width: calc(50% - 20px);
+        }
+        .large-grid .item {
+            flex: 1;
+            min-width: calc(25% - 20px);
+        }
+        .promo-box {
+            background-color: #f197d0;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #e2a4a6;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wireframes</h1>
+    </header>
+    <div class="container">
+        <!-- Basic Layout -->
+        <div class="full basic">
+            <h2>Basic Layout</h2>
+            <p>Nature encompasses all the living and non-living things on Earth that exist independently of human activity. It includes the physical world around us, such as forests, oceans, mountains, and deserts, as well as the flora and fauna that inhabit these environments. Nature is the source of the air we breathe, the water we drink, and the food we eat, making it vital for our survival.</p>
+        </div>
+        <!-- Two-Column Layout -->
+        <div class="row two-column">
+          <div class="column">
+              <h2>Left Column</h2>
+              <p>Nature includes all living and non-living things on Earth, from forests, oceans, and mountains to the plants and animals that inhabit them. It provides essential resources like air, water, and food, making it vital for life. Beyond its practical importance, nature offers immense beauty and inspiration, often bringing peace and emotional well-being to those who spend time in it.The interconnectedness of natural systems maintains the planet’s ecological balance, but human activities such as pollution, deforestation, and climate change threaten these systems, leading to loss of biodiversity and environmental degradation. Protecting nature is crucial for preserving this balance and ensuring that future generations can continue to benefit from and appreciate the natural world. Conservation efforts aim to safeguard ecosystems, promoting a sustainable relationship between humans and nature.</p>
+          </div>
+          <div class="column">
+              <h2>Right Column</h2>
+              <p>Nature encompasses all the living and non-living things on Earth that exist independently of human activity. It includes the physical world around us, such as forests, oceans, mountains, and deserts, as well as the flora and fauna that inhabit these environments. Nature is the source of the air we breathe, the water we drink, and the food we eat, making it vital for our survival.
+In addition to its practical importance, nature also offers aesthetic and emotional value. Many people find peace and inspiration in natural settings, whether it’s a quiet forest, a flowing river, or a vast open sky. The beauty of nature has inspired countless works of art, literature, and music.
+                 Moreover, nature is a complex system with intricate interconnections between organisms and their environment. This balance is crucial for the health of ecosystems and the planet as a whole. However, human activities like deforestation, pollution, and climate change are threatening these natural systems, leading to a loss of biodiversity and the degradation of natural resources.
+                 Conserving and protecting nature is essential for maintaining the Earth’s ecological balance and ensuring that future generations can enjoy the beauty and benefits of the natural world.</p>
+          </div>
+      </div>
+
+      <!-- Three-Column Layout -->
+      <div class="row three-column">
+          <div class="column">
+              <h2>Left Column</h2>
+              <p>Nature is the foundation of life on Earth, encompassing everything from the tiniest microorganisms to the vast oceans and towering mountains. It operates through a series of complex systems, such as the water cycle, food chains, and climate patterns, which are all interconnected. These systems sustain life by regulating the environment, providing habitats, and supporting the growth of plants and animals.
+The beauty of nature is evident in its diversity, from the vibrant colors of a coral reef to the serene stillness of a forest. This diversity not only enriches our lives aesthetically but also plays a crucial role in the resilience of ecosystems. Each species, no matter how small, has a role to play in maintaining the balance of its environment.
+                Human beings are an integral part of nature, yet our actions often disrupt these natural systems. Industrialization, urbanization, and the exploitation of natural resources have led to significant environmental challenges, including global warming, habitat loss, and pollution. These changes threaten the delicate balance of ecosystems, leading to the extinction of species and the degradation of the environment.</p>
+          </div>
+          <div class="column">
+              <h2>Center Column</h2>
+              <p>Nature is the foundation of life on Earth, encompassing everything from the tiniest microorganisms to the vast oceans and towering mountains. It operates through a series of complex systems, such as the water cycle, food chains, and climate patterns, which are all interconnected. These systems sustain life by regulating the environment, providing habitats, and supporting the growth of plants and animals.
+                The beauty of nature is evident in its diversity, from the vibrant colors of a coral reef to the serene stillness of a forest. This diversity not only enriches our lives aesthetically but also plays a crucial role in the resilience of ecosystems. Each species, no matter how small, has a role to play in maintaining the balance of its environment.
+                                Human beings are an integral part of nature, yet our actions often disrupt these natural systems. Industrialization, urbanization, and the exploitation of natural resources have led to significant environmental challenges, including global warming, habitat loss, and pollution. These changes threaten the delicate balance of ecosystems, leading to the extinction of species and the degradation of the environment.</p>
+          </div>
+          <div class="column">
+              <h2>Right Column</h2>
+              <p>Nature also offers numerous health benefits, both physical and mental. Spending time in natural settings has been shown to reduce stress, improve mood, and enhance overall well-being. This connection to nature is vital for maintaining a healthy, balanced life.
+                Efforts to protect and restore nature are essential for the survival of our planet. Conservation initiatives focus on preserving habitats, protecting endangered species, and reducing human impact on the environment. Sustainable practices, such as responsible farming, renewable energy use, and waste reduction, help mitigate the damage caused by human activities.
+              </p>
+          </div>
+      </div>
+      <!-- Two-Row Layout -->
+      <div class="row two-row">
+        <div class="full">
+            <h2>Row 1</h2>
+            <p>Nature is the essence of life, offering vital resources, beauty, and ecological balance. It sustains us through interconnected systems like the water cycle and food chains. However, human activities threaten these natural systems, making conservation essential to preserve biodiversity and ensure a sustainable future for all living beings.</p>
+        </div>
+        <div class="full">
+            <h2>Row 2</h2>
+            <p>Nature provides essential resources and sustains life through interconnected systems. Its beauty and balance are threatened by human actions, making conservation crucial for preserving biodiversity and a healthy planet.</p>
+        </div>
+    </div>
+
+    <!-- Three-Row Layout -->
+    <div class="row three-row">
+        <div class="full">
+            <h2>Row 1</h2>
+            <p>Nature is the source of all life, providing essential resources like air, water, and food. It operates through interconnected systems that maintain ecological balance. The beauty and diversity of nature enrich our lives, but human activities such as pollution and deforestation threaten these systems. Conservation is vital to protect biodiversity and ensure the health of our planet, allowing future generations to enjoy and benefit from the natural world.</p>
+        </div>
+        <div class="full">
+            <h2>Row 2</h2>
+            <p>Nature sustains life by providing essential resources like air, water, and food, and through interconnected systems that maintain ecological balance. Its beauty and diversity enrich our lives, but human activities like pollution and deforestation threaten these systems. Conservation is crucial to protect biodiversity and ensure a healthy planet for future generations to enjoy and thrive in.</p>
+        </div>
+        <div class="full">
+            <h2>Row 3</h2>
+            <p>Nature is the foundation of life, offering essential resources like air, water, and food, while maintaining ecological balance through interconnected systems. Its beauty and diversity enrich our lives, providing peace and inspiration. However, human activities like deforestation and pollution threaten these natural systems. Conservation is crucial to protect biodiversity, preserve ecosystems, and ensure that future generations can enjoy and benefit from the wonders of the natural world.</p>
+        </div>
+    </div>
+     <!-- Four-Row Layout -->
+     <div class="row four-row">
+      <div class="full">
+          <h2>Row 1</h2>
+          <p>Nature sustains life by providing essential resources and maintaining ecological balance through interconnected systems. Its beauty and diversity enrich our lives, but human actions like pollution and deforestation threaten these systems. Conservation is vital to protect biodiversity and ensure a healthy planet for future generations to enjoy.</p>
+      </div>
+      <div class="full">
+          <h2>Row 2</h2>
+          <p>Nature sustains life by providing essential resources and maintaining ecological balance through interconnected systems. Its beauty and diversity enrich our lives, but human actions like pollution and deforestation threaten these systems. Conservation is vital to protect biodiversity and ensure a healthy planet for future generations to enjoy.</p>
+      </div>
+      <div class="full">
+          <h2>Row 3</h2>
+          <p>Nature sustains life by providing essential resources and maintaining ecological balance through interconnected systems. Its beauty and diversity enrich our lives, but human actions like pollution and deforestation threaten these systems. Conservation is vital to protect biodiversity and ensure a healthy planet for future generations to enjoy.</p>
+      </div>
+      <div class="full">
+          <h2>Row 4</h2>
+          <p>Nature sustains life by providing essential resources and maintaining ecological balance through interconnected systems. Its beauty and diversity enrich our lives, but human actions like pollution and deforestation threaten these systems. Conservation is vital to protect biodiversity and ensure a healthy planet for future generations to enjoy.</p>
+      </div>
+  </div>
+  <!-- Article Layout -->
+  <div class="article-layout">
+    <div class="row">
+        <div class="article-left">
+            <h2>Article Left</h2>
+            <p>Nature encompasses all the living and non-living things on Earth that exist independently of human activity. It includes the physical world around us, such as forests, oceans, mountains, and deserts, as well as the flora and fauna that inhabit these environments. Nature is the source of the air we breathe, the water we drink, and the food we eat, making it vital for our survival.
+In addition to its practical importance, nature also offers aesthetic and emotional value. Many people find peace and inspiration in natural settings, whether it’s a quiet forest, a flowing river, or a vast open sky. The beauty of nature has inspired countless works of art, literature, and music.
+                Moreover, nature is a complex system with intricate interconnections between organisms and their environment. This balance is crucial for the health of ecosystems and the planet as a whole. However, human activities like deforestation, pollution, and climate change are threatening these natural systems, leading to a loss of biodiversity and the degradation of natural resources.
+                Conserving and protecting nature is essential for maintaining the Earth’s ecological balance and ensuring that future generations can enjoy the beauty and benefits of the natural world.</p>
+        </div>
+        <div class="article-main">
+            <h2>Main Article</h2>
+            <p>Nature is the foundation of life on Earth, encompassing everything from the tiniest microorganisms to the vast oceans and towering mountains. It operates through a series of complex systems, such as the water cycle, food chains, and climate patterns, which are all interconnected. These systems sustain life by regulating the environment, providing habitats, and supporting the growth of plants and animals.
+The beauty of nature is evident in its diversity, from the vibrant colors of a coral reef to the serene stillness of a forest. This diversity not only enriches our lives aesthetically but also plays a crucial role in the resilience of ecosystems. Each species, no matter how small, has a role to play in maintaining the balance of its environment.
+                Human beings are an integral part of nature, yet our actions often disrupt these natural systems. Industrialization, urbanization, and the exploitation of natural resources have led to significant environmental challenges, including global warming, habitat loss, and pollution. These changes threaten the delicate balance of ecosystems, leading to the extinction of species and the degradation of the environment.
+                Efforts to protect and restore nature are essential for the survival of our planet. Conservation initiatives focus on preserving habitats, protecting endangered species, and reducing human impact on the environment. Sustainable practices, such as responsible farming, renewable energy use, and waste reduction, help mitigate the damage caused by human activities.
+                Nature also offers numerous health benefits, both physical and mental. Spending time in natural settings has been shown to reduce stress, improve mood, and enhance overall well-being. This connection to nature is vital for maintaining a healthy, balanced life.
+                Nature is the collective term for all living and non-living elements on Earth, existing independently of human influence. It includes the physical world around us, from the vast oceans and towering mountains to the smallest microorganisms. Nature operates through a series of intricate and interconnected systems, providing essential resources and sustaining life. This exploration delves into the various facets of nature, including its components, functions, beauty, and the pressing need for conservation.
+Components of Nature
+                Nature can be divided into two broad categories: abiotic (non-living) and biotic (living) components.
+                Abiotic Components: These include elements such as air, water, soil, minerals, and climate. They form the physical environment in which life exists and operates. For example, soil provides nutrients for plants, water is essential for all living organisms, and air supplies oxygen for respiration.
+                Biotic Components: These encompass all living organisms, including plants, animals, fungi, and microorganisms. Each organism plays a role in the ecosystem, contributing to the dynamic interactions that sustain life. Plants produce oxygen and serve as the base of food chains, while animals help in seed dispersal and pollination.
+                Ecological Systems:Nature operates through various ecological systems, which are complex networks of interactions between abiotic and biotic components. Some key systems include:
+                The Water Cycle: This system describes the continuous movement of water on, above, and below the surface of the Earth. It includes processes such as evaporation, condensation, precipitation, and infiltration. The water cycle is crucial for replenishing freshwater supplies and supporting all life forms.
+                The Carbon Cycle: This cycle involves the movement of carbon through the atmosphere, oceans, soil, and living organisms. Plants absorb carbon dioxide during photosynthesis, while animals release it through respiration. This cycle is vital for regulating atmospheric carbon levels and mitigating climate change.
+                The Nitrogen Cycle: Nitrogen is a key element for living organisms, necessary for the formation of proteins and DNA. The nitrogen cycle includes processes such as nitrogen fixation, nitrification, and denitrification, which transform nitrogen into various forms that can be utilized by plants and animals.
+                Food Chains and Food Webs: These illustrate the flow of energy through ecosystems. A food chain represents a linear sequence of organisms, each serving as a source of energy for the next. A food web is a more complex network of interconnected food chains, showing the multiple feeding relationships in an ecosystem.    
+            </p>
+        </div>
+        <div class="article-right">
+            <h2>Article Right</h2>
+            <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+        </div>
+    </div>
+    <!-- Landing Page -->
+    <div class="full">
+      <h2>Landing Page</h2>
+      <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+  </div>
+  <!-- Medium Grid -->
+  <div class="row medium-grid">
+    <div class="item">
+        <h2>Medium Grid Item 1</h2>
+        <p>Nature encompasses all living and non-living elements of the Earth, including ecosystems like forests, oceans, and mountains. It provides essential resources such as air, water, and food, and maintains ecological balance through intricate systems like the water cycle and food chains. The beauty and diversity of nature offer aesthetic and emotional enrichment, while also supporting the health and well-being of all living beings. However, human activities such as deforestation, pollution, and climate change threaten these natural systems. Conservation efforts are crucial to protect biodiversity, restore ecosystems, and ensure that future generations can continue to benefit from and appreciate the natural world.</p>
+    </div>
+    <div class="item">
+        <h2>Medium Grid Item 2</h2>
+        <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+    </div>
+    <div class="item">
+        <h2>Medium Grid Item 3</h2>
+        <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+    </div>
+</div>
+        <!-- Small Grid -->
+        <div class="row small-grid">
+          <div class="item">
+              <h2>Small Grid Item 1</h2>
+              <p>Nature encompasses the entirety of the physical world, including living organisms, landscapes, and the elements. It provides essential resources like air, water, food, and raw materials, all of which are fundamental to life. The natural world operates through interconnected systems such as the water cycle, food chains, and climate regulation, ensuring the balance and sustainability of ecosystems.
+Beyond its practical importance, nature offers immense beauty and serenity, providing a source of inspiration, relaxation, and spiritual renewal. However, human activities like deforestation, pollution, and climate change increasingly threaten these natural systems. Conservation efforts are vital to protect biodiversity, restore damaged ecosystems, and ensure that nature's resources and beauty are preserved for future generations to enjoy and depend upon.</p>
+          </div>
+          <div class="item">
+              <h2>Small Grid Item 2</h2>
+              <p>Nature encompasses the entirety of the physical world, including living organisms, landscapes, and the elements. It provides essential resources like air, water, food, and raw materials, all of which are fundamental to life. The natural world operates through interconnected systems such as the water cycle, food chains, and climate regulation, ensuring the balance and sustainability of ecosystems.
+ Beyond its practical importance, nature offers immense beauty and serenity, providing a source of inspiration, relaxation, and spiritual renewal. However, human activities like deforestation, pollution, and climate change increasingly threaten these natural systems. Conservation efforts are vital to protect biodiversity, restore damaged ecosystems, and ensure that nature's resources and beauty are preserved for future generations to enjoy and depend upon.</p>
+          </div>
+      </div>
+      <!-- Large Grid -->
+      <div class="row large-grid">
+        <div class="item">
+            <h2>Large Grid Item 1</h2>
+            <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+        </div>
+        <div class="item">
+            <h2>Large Grid Item 2</h2>
+            <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+        </div>
+        <div class="item">
+            <h2>Large Grid Item 3</h2>
+            <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+        </div>
+        <div class="item">
+            <h2>Large Grid Item 4</h2>
+            <p>Nature includes all living and non-living elements of the Earth, from vast forests and oceans to intricate ecosystems. It provides essential resources like air, water, and food, and supports life through complex systems such as the water cycle and food chains. The beauty and diversity of nature enrich our lives, offering inspiration and tranquility. However, human activities like pollution, deforestation, and climate change pose significant threats to these systems. Protecting nature through conservation is crucial to preserving biodiversity, maintaining ecological balance, and ensuring that future generations can enjoy and benefit from the natural world’s wonders and resources.</p>
+          </div>
+          
+      </div>
+
+      <!-- Promo Box -->
+      <div class="promo-box">
+          <h2>Promo Box</h2>
+          <p>Nature is the foundation of life on Earth, encompassing all living and non-living elements, from vast oceans, towering mountains, and dense forests to the smallest microorganisms. It provides the essential resources we depend on—air, water, food, and raw materials—while also regulating the planet’s climate and supporting complex ecosystems. These natural systems, like the water cycle, photosynthesis, and food chains, maintain ecological balance, ensuring the survival of countless species, including humans.
+    The beauty of nature is evident in its incredible diversity, offering breathtaking landscapes, vibrant wildlife, and serene environments that inspire awe and provide a deep sense of peace and connection. This connection to nature has profound effects on our mental and physical well-being, reducing stress, enhancing mood, and fostering creativity and spirituality.
+        However, nature faces growing threats from human activities. Deforestation, pollution, overfishing, and climate change are disrupting natural systems, leading to habitat destruction, loss of biodiversity, and environmental degradation. These changes not only harm the environment but also endanger human health and livelihoods.
+            Conservation efforts are crucial in addressing these challenges. By protecting endangered species, restoring damaged ecosystems, and promoting sustainable practices, we can help preserve the natural world for future generations. Sustainable living, including reducing waste, conserving energy, and supporting environmentally friendly policies, plays a key role in protecting nature.
+             In essence, nature is not just a backdrop to human life; it is a vital, dynamic force that sustains all living things. Protecting and preserving it is essential for the continued health and well-being of our planet and its inhabitants.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+<footer>
+<p>Footer</p>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
